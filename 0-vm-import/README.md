@@ -7,10 +7,11 @@
 Disk Image: VMDK, Static allocation
 CPU count/Memory: Don't consider (This is managed by AWS Instance)
 - Just set for installation speed
-###1.2 OS Configuration
+### 1.2 OS Configuration
 No extra user
 DHCP network configuration
-###1.3 VM Export
+
+### 1.3 VM Export
 After installtaion OS, do export from VirtualBox menu
 Select "Open Virtualization Format 2.0"
 
