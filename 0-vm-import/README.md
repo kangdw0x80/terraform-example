@@ -5,15 +5,19 @@
 2. Export to OVA file
 ### 1.1 VM Configuration
 Disk Image: VMDK, Static allocation
+
 CPU count/Memory: Don't consider (This is managed by AWS Instance)
 - Just set for installation speed
+
 ### 1.2 OS Configuration
-No extra user
-DHCP network configuration
+Do not add user.
+
+Network is DHCP configuration.
 
 ### 1.3 VM Export
-After installtaion OS, do export from VirtualBox menu
-Select "Open Virtualization Format 2.0"
+Export after installtaion OS.
+
+Select `Open Virtualization Format 2.0`
 
 ## 2. Upload image to S3
 ### 2.1 Create group/user in AWS
@@ -58,6 +62,7 @@ Default output format [None]:
 
 ### 3.3 Upload OVA file to S3
 Upload OVA file created by VirtualBox to S3 Bucket
+
 In this case, I uploaded file in `S3://centos.image.com/centos76/centos7.6-ext4.ova`
 ## 4. Import VM Image
 ### 4.1 Create Role for VM Import Service
@@ -205,6 +210,7 @@ Step of Importing is below
 - active booted
 - active preparing ami
 - complete
+
 You can check with command
 ```
 # Use your impoart ami (ex import-ami-0a4179852aa7ed656
