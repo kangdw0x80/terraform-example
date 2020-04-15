@@ -1,0 +1,10 @@
+[
+  {
+    "Description": "CentOS 7.6 OVA",
+    "Format": "ova",
+    "UserBucket": {
+      "S3Bucket": "centos.image.com",
+      "S3Key": "centos76/centos7.6-ext4.ova"
+    }
+  }
+]
